@@ -1,0 +1,16 @@
+[
+    {
+       "name":"Samsung",
+       "image":"https://guide-images.cdn.ifixit.com/igi/o4OjCNmNeOhvsS1P.large",
+       "price":430,
+       "description":"Good phone with great options",
+       "category":"electronic"
+    },
+    {
+        "name":"Dubai T-shirt",
+        "image":"https://m.media-amazon.com/images/I/B1DnWZEQ8ES._CLa%7C2140%2C2000%7C61%2BpVTWAxEL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UL1500_.png",
+        "price":39,
+        "description":"Dubai t-shit",
+        "category":"clothes"
+     }
+ ]
