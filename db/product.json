@@ -1,8 +1,8 @@
 [
     {
-       "name":"Samsung",
+       "name":"Iphone",
        "image":"https://guide-images.cdn.ifixit.com/igi/o4OjCNmNeOhvsS1P.large",
-       "price":430,
+       "price":930,
        "description":"Good phone with great options",
        "category":"electronic"
     },
@@ -10,7 +10,70 @@
         "name":"Dubai T-shirt",
         "image":"https://m.media-amazon.com/images/I/B1DnWZEQ8ES._CLa%7C2140%2C2000%7C61%2BpVTWAxEL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UL1500_.png",
         "price":39,
-        "description":"Dubai t-shit",
+        "description":"Perfect travel to Dubai t shirt Very comfortable material Lightweight Classic fit Double-needle sleeve and bottom hem",
         "category":"clothes"
+     },
+     {
+        "name":"Keyboard Mouse Combo",
+        "image":"https://m.media-amazon.com/images/I/71nDsP1F0vL._AC_SL1500_.jpg",
+        "price":45,
+        "description":"havit Keyboard Rainbow Backlit Wired Gaming Keyboard Mouse Combo, LED 104 Keys USB Ergonomic Wrist Rest Keyboard, 4800 DPI Mouse for PC Gamer (White)",
+        "category":"electronic"
+     },
+     {
+        "name":"Apple iMac 21",
+        "image":"https://m.media-amazon.com/images/I/616gV6XY+4L._AC_SX679_.jpg",
+        "price":299,
+        "description":"Apple iMac 21.5in 2.7GHz Core i5 (ME086LL/A) All In One Desktop, 8GB Memory, 1TB Hard Drive, Mac OS X Mountain Lion (Renewed)",
+        "category":"electronic"
+     },
+     {
+        "name":"ASTRO Gaming A20",
+        "image":"https://m.media-amazon.com/images/I/61OGpwDEURL._SX522_.jpg",
+        "price":120,
+        "description":"ASTRO Gaming A20 Wireless Headset Gen 2 for Xbox Series X | S, Xbox One, PC & Mac - White /Green",
+        "category":"games"
+     },
+     {
+        "name":"PlayStation Controller",
+        "image":"https://m.media-amazon.com/images/I/B1DnWZEQ8ES._CLa%7C2140%2C2000%7C61%2BpVTWAxEL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UL1500_.png",
+        "price":79,
+        "description":"PlayStation DualSense Wireless Controller Galactic Purple",
+        "category":"games"
+     },
+     {
+        "name":"Espresso Machine",
+        "image":"https://m.media-amazon.com/images/I/61jVdQtWBQL._AC_SX679_.jpg",
+        "price":169,
+        "description":"Espresso Machine, Wirsh 15 Bar Espresso Maker with Commercial Steam Frother,Compact Expresso Coffee Machine with 42oz Removable Reservoir for Cappuccino and Latte, Brushed Stainless Steel",
+        "category":"Kitchen"
+     },
+     {
+        "name":"Zulay Original Milk",
+        "image":"https://m.media-amazon.com/images/I/81hTjZrfnvL._AC_SX679_.jpg",
+        "price":18,
+        "description":"Zulay Original Milk Frother Handheld Foam Maker for Lattes - Whisk Drink Mixer for Coffee, Mini Foamer for Cappuccino, Frappe, Matcha, Hot Chocolate by Milk Boss (Black)",
+        "category":"Kitchen"
+     },
+     {
+        "name":"Luggage",
+        "image":"https://m.media-amazon.com/images/I/91gc9Hk8BXL._AC_SX679_.jpg",
+        "price":139,
+        "description":"Travelers Club Midtown Hardside 4-Piece Luggage Travel Set, Rose Gold",
+        "category":"Travels"
+     },
+     {
+        "name":"Canon EOS",
+        "image":"https://m.media-amazon.com/images/I/71W1KvLH3sL._AC_SX679_.jpg",
+        "price":699,
+        "description":"Canon EOS REBEL T7 DSLR Camera|2 Lens Kit with EF18-55mm + EF 75-300mm Lens, Black",
+        "category":"electronic"
+     },
+     {
+        "name":"HP Envy Inspire 7955e ",
+        "image":"https://m.media-amazon.com/images/I/613wpd44liL._AC_SX679_.jpg",
+        "price":269,
+        "description":"HP Envy Inspire 7955e Wireless Color All-in-One Printer with Bonus 6 Months Instant Ink with HP+ (1W2Y8A)",
+        "category":"electronic"
      }
  ]
