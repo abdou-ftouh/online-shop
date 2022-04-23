@@ -1,0 +1,48 @@
+<%- include('partes/header')%>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <%- include('partes/navbar')%>
+        <div class="container text-center">
+            <h4 class="hpro">Add Product</h4>
+            <form action="/product/newProduct" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Product Name">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="price" placeholder="Price">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="image" placeholder="URL Image">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="description" placeholder="Description" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <select class="custom-select">
+                        <option selected>Select Product Category</option>
+                        <option value="Electronic">Electronic</option>
+                        <option value="Clothes">Clothes</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Games">Games</option>
+                        <option value="Travels">Travels</option>
+                        <option value="Baby">Baby</option>
+                        <option value="Pet Supplies">Pet Supplies</option>
+                        <option value="Sports & Outdoors">Sports & Outdoors</option>
+                        <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                        <option value="Toys">Toys</option>
+                        <option value="Garden & Outdoor">Garden & Outdoor</option>
+                        <option value="Handmade">Handmade</option>
+                        <option value="Home">Home</option>
+                        <option value="Jewelry">Jewelry</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="Garden">Garden</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                    <a href="/mngProduct" class="btn btn-secondary">Cancel</a>
+                </div>
+
+            </form>
+        </div>
+    <%- include('partes/footer')%>

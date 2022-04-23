@@ -1,11 +1,12 @@
 const express = require('express')
+const methodOverride =require('method-override')
 const app = express()
 
 
 const productControler= require('./controllers/productControler')
 app.use(express.static(__dirname + '/' + 'public'));
 app.set('view engine', 'ejs')
-
+app.use(methodOverride('_method'))
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 app.use(productControler)

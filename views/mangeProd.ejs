@@ -1,0 +1,47 @@
+<%- include('partes/header')%>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <%- include('partes/navbar')%>
+    <div class="container">
+      <table class="table table-bordered">
+        <header class="d-flex justify-content-between align-items-center">
+          <h1>Products</h1>
+          <a href="/addProduct" class="btn btn-primary">Add Product</a>
+        </header>
+        <thead>
+          <tr>
+            <th scope="col">Products</th>
+            <th scope="col">Image</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th class="text-center" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(e=> { %>
+            <tr>
+              <th scope="row">
+                <%=e.name%>
+              </th>
+              <td><img src="<%=e.image%>" style="width: 100px;"></td>
+              <td>
+                <%=e.price%> $
+              </td>
+              <td>
+                <%=e.category%>
+              </td>
+              <td>
+                <div class="links text-center">
+                  <a href="/product/<%=e._id%> " class="btn btn-info">View</a>
+                  <a href="/product/<%=e._id%>/edit" class="btn btn-primary">Edit</a>
+                  <form action="/product/<%=e._id%>?_method=DELETE" method="POST" class="d-inline">
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                  </form>
+                </div>
+              </td>
+            </tr>
+            <% }); %>
+        </tbody>
+      </table>
+    </div>
+
+    <%- include('partes/footer')%>
