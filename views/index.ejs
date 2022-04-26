@@ -1,8 +1,6 @@
 <%- include('partes/header')%>
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <%- include('partes/navbar')%>
-
-
     <div class="container text-center">
       <div class="row">
         <% stuff.forEach(e=> { %>
@@ -20,6 +18,9 @@
                 <form action="/cart" method="post">
                   <label for="quantity">Quantity:</label>
                   <input type="number" class="form-control" name="quantity" min="0" max="10" step="1" value="1">
+                  <input type="hidden"  name="name" value="<%=e.name%>">
+                  <input type="hidden"  name="price" value="<%=e.price%>">
+                  <input type="hidden"  name="productId" value="<%=e._id%>">
                   <br>
                   <input type="submit" value="Add to Cart" class="btn btn-primary">
                 </form>
