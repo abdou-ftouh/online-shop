@@ -1,5 +1,5 @@
 <%- include('partes/header')%>
-  <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <%- include('partes/navbar')%>
     <div class="container">
       <table class="table table-bordered">
@@ -27,7 +27,8 @@
                 <form  method="post">
                   <td><input type="text" name="quantity" class="form-control" value="<%= data[i].quantity %>"> </td>
                   <td><%= data[i].price * data[i].quantity %>$ </td>
-                <td>
+                <td class="links text-center">
+                  <input type="hidden" name="total" value="<%=sum%>">
                   <input type="hidden" name="cartId" value="<%= data[i]._id %>">
                 <input type="submit" value="Save" class="btn btn-success" formaction="/cart/<%= data[i]._id %>?_method=put">
                 <input type="submit" value="Delete" class="btn btn-danger" formaction="/cart/<%= data[i]._id %>?_method=DELETE">
@@ -43,15 +44,15 @@
            
         </tbody>
       </table>
-      <div class="d-flex justify-content-between align-items-center">
-        <h3>
-          Total : <%= sum%>$ 
-        </h3>
-      
+     
         <form  method="post">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3>
+              Total : <%=sum%> $ 
+            </h3>
           <div>
-          <input type="submit" value="Order" class="btn btn-primary btn-lg" formaction="/cart/?_method=put">
-        
+            <input type="hidden" name="total" value="<%=sum%>">
+          <input type="submit" value="Order" class="btn btn-primary btn-lg" formaction="/cart/verify">
           <input type="submit" value="Delete all" class="btn btn-danger btn-lg" formaction="/cart/delete?_method=DELETE">
         </div>
         </form>

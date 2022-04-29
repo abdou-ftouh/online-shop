@@ -1,5 +1,5 @@
 <%- include('partes/header')%>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../styles.css" /> -->
 <%- include('partes/navbar')%>
     <div class="container text-center">
       <h4 class="hpro">Edit Product</h4>
@@ -15,25 +15,28 @@
           <label for="description">Description:</label>
           <textarea class="form-control" name="description" rows="3"><%=data.description %></textarea>
         </div>
-        <select class="custom-select">
-          <option selected>Select Product Category</option>
-          <option value="Electronic">Electronic</option>
-          <option value="Clothes">Clothes</option>
-          <option value="Kitchen">Kitchen</option>
-          <option value="Games">Games</option>
-          <option value="Travels">Travels</option>
-          <option value="Baby">Baby</option>
-          <option value="Pet Supplies">Pet Supplies</option>
-          <option value="Sports & Outdoors">Sports & Outdoors</option>
-          <option value="Tools & Home Improvement">Tools & Home Improvement</option>
-          <option value="Toys">Toys</option>
-          <option value="Garden & Outdoor">Garden & Outdoor</option>
-          <option value="Handmade">Handmade</option>
-          <option value="Home">Home</option>
-          <option value="Jewelry">Jewelry</option>
-          <option value="Shoes">Shoes</option>
-          <option value="Garden">Garden</option>
-        </select>
+        <div class="form-group">
+          <label for="category">Select Product Category:</label>
+          <select name="category" class="custom-select" >
+              <option value="Electronic">Electronic</option>
+              <option value="Clothes" >Clothes</option>
+              <option value="Kitchen">Kitchen</option>
+              <option value="Games">Games</option>
+              <option value="Travels">Travels</option>
+              <option value="Baby">Baby</option>
+              <option value="Pet Supplies">Pet Supplies</option>
+              <option value="Sports & Outdoors">Sports & Outdoors</option>
+              <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+              <option value="Toys">Toys</option>
+              <option value="Garden & Outdoor">Garden & Outdoor</option>
+              <option value="Handmade">Handmade</option>
+              <option value="Home">Home</option>
+              <option value="Jewelry">Jewelry</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Garden">Garden</option>
+
+          </select>
+      </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Update Product</button>
           <a href="/product" class="btn btn-secondary">Cancel</a>

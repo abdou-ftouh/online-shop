@@ -6,7 +6,7 @@
         <% stuff.forEach(e=> { %>
           <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card" style="width: 100%">
-              <img class="card-img-top" src="<%=e.image%> " alt="Card image cap" height="200px">
+              <img class="card-img-top" src="<%=e.image%> " alt="Card image cap" height="210px" style="padding: 9px 9px 9px 9px;">
               <div class="card-body">
                 <h4 class="card-title"><a href="/product/<%=e._id%> ">
                     <%=e.name%>
@@ -23,6 +23,7 @@
                   <input type="hidden"  name="productId" value="<%=e._id%>">
                   <br>
                   <input type="submit" value="Add to Cart" class="btn btn-primary">
+               
                 </form>
               </div>
             </div>

@@ -1,0 +1,62 @@
+<%- include('partes/header')%>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <%- include('partes/navbar')%>
+    <div class="container">
+      <table class="table table-bordered">
+        <header class="d-flex justify-content-between align-items-center">
+          <h1>Order Confirmation</h1>
+          
+        </header>
+        <thead>
+          <tr>
+            <th scope="col">Products Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Total</th>
+            <th scope="col">Status</th>
+        
+            <th class="text-center" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(e=> { %>
+              <tr>
+                <th scope="row">
+                  <%=e.name%>
+                </th>
+               
+                <td>
+                    <li>
+                        <%=e.address.street%> 
+                    </li>
+                    <li>
+                        <%=e.address.city%> 
+                    </li>
+                    <li>
+                        <%=e.address.state%> 
+                    </li>
+                    <li>
+                        <%=e.address.zip%> 
+                    </li>
+                
+                </td>
+                <td>
+                   <%=e.total%> $
+                 </td>
+               <td>
+                  <li>Pending</li>
+               </td>
+                <td>
+                  <div class="links text-center">
+                 
+                    <form action="/orders/<%=e._id%>?_method=DELETE" method="POST" class="d-inline">
+                      <input type="submit" value="Cancel" class="btn btn-danger" />
+                    </form>
+                  </div>
+                </td>
+              </tr>
+              <% }); %>
+          </tbody>
+      </table>
+    </div>
+
+    <%- include('partes/footer')%>

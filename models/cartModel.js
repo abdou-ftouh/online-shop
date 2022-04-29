@@ -4,7 +4,8 @@ const CartShema= new mongoose.Schema({
     name:String,
     price:Number,
     quantity:Number,
-    productId:String
+    productId:String,
+    
 },
 {timestamps:true}
 )
